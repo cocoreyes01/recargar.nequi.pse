@@ -1,0 +1,45 @@
+/**
+ * Core JS
+ */
+
+jQuery( document ).ready( function( $ ) {
+
+	$( 'figcaption h3 a' ).hover(
+		function() {
+			$( this ).parent().parent().parent().find( '.entry-image img' ).addClass( 'img-hover' );
+		}, function() {
+			$( this ).parent().parent().parent().find( '.entry-image img' ).removeClass( 'img-hover' );
+		}
+	);
+
+	// To add placeholder text to header search in IE9
+	// based on https://gist.github.com/samgro/823300
+	if ( navigator.appVersion.indexOf( "MSIE 9." ) !=-1 ) {
+		$( '[placeholder]' ).focus( function() {
+			var input = $( this );
+			if ( input.hasClass( 'placeholder' ) ) {
+				input.val( '' );
+				input.removeClass( 'placeholder' );
+			}
+		} ).blur( function() {
+			var input = $( this );
+			if ( input.val() === '' ) {
+				input.addClass( 'placeholder' );
+				input.val( input.attr( 'placeholder' ) );
+			}
+		} ).blur().parents( 'form' ).submit( function() {
+			$( this ).find( '[placeholder]' ).each( function() {
+				var input = $( this );
+				if ( input.hasClass( 'placeholder' ) ) {
+					input.val( '' );
+				}
+			} );
+		} );
+
+		// Clear input on refresh so that the placeholder class gets added back
+		$( window ).unload( function() {
+			$( '[placeholder]' ).val( '' );
+		} );
+	}
+
+} );

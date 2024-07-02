@@ -1,0 +1,120 @@
+/* Make portfolio items full width */
+
+.single.no-sidebar .content-area p, .single-jetpack-portfolio .content-area p {
+margin-right: 0px;
+}
+
+/* Hide portfolio title from home */
+
+.home h2.section-title {
+    display: none;
+}
+
+/* Change featured content button text */
+
+a.slide-button.button {
+    font-size: 0px;
+}
+
+a.slide-button.button:after {
+    content: "¡Bienvenidos!";
+    font-size: 15.6px;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 1em 1.5em;
+}
+
+/* Change logo size and center */
+
+.site-logo {
+    max-width: 100%;
+    width: 500px;
+margin: 0 auto;
+}
+
+.site-branding {
+    float: none;
+}
+
+/* Implent sticky header */
+
+.main-navigation {
+    float: right;
+    max-width: 100%;
+    position: fixed;
+    top: 20px;
+    background: white;
+    z-index: 9999;
+    margin: 0 auto;
+}
+
+   .main-navigation ul {
+      background: white;
+    width: 1920px;
+    margin-bottom: -10px;
+}
+
+
+/* Making the top menu full width for sticky but not the rest of the site */
+
+.container {
+	max-width:100%;
+}
+
+main#main {
+    width: 1170px;
+    margin: 0 auto;
+} 
+
+/* Forum styles */
+
+#bbpress-forums,
+#bbpress-forums ul.bbp-forums, #bbpress-forums ul.bbp-lead-topic, #bbpress-forums ul.bbp-replies, #bbpress-forums ul.bbp-search-results, #bbpress-forums ul.bbp-topics,
+div.bbp-breadcrumb, 
+div.bbp-topic-tags,
+div.bbp-template-notice li,
+div.bbp-template-notice p{
+    font-size: 16px;   
+}
+
+/* Mobile menu for stick header */
+
+@media (max-width: 1210px) {
+ .main-navigation ul {
+      background: white;
+    width: unset;
+    margin-bottom: -10px;
+}
+	
+		main#main {
+    width: 100%;
+	}
+	
+}
+
+@media (max-width: 768px) {
+.main-navigation {
+    float: none;
+    position: initial;
+}
+	
+	main#main {
+    width: 100%;
+	}
+	
+}
+
+/* Featured post on homepage / XXXXXX-HC (MI) */
+.featured {
+	max-height:80px;
+	overflow:hidden;
+}
+
+/* center custom CSS homepage button in Qua | 19434888-hc */
+@media screen and (min-width: 480px) {
+    .featured .slides .slide .slide-text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        left: 0;
+    }
+}

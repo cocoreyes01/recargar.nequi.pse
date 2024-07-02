@@ -1,0 +1,129 @@
+/*--------------------------------------------------------------
+# WordPress.com specific css
+--------------------------------------------------------------*/
+
+.twitter-tweet[style*="float: right"] {
+	margin-left: 2em !important; /* !important to overwrite inline styles */
+}
+
+.twitter-tweet[style*="float: left"] {
+	margin-right: 2em !important; /* !important to overwrite inline styles */
+}
+
+.contact-form textarea {
+	width: 98% !important; /* !important to overwrite inline styles */
+}
+
+.sd-sharing-enabled,
+div#jp-relatedposts {
+	margin-top: 3em;
+}
+
+.widget_authors img {
+  float: none;
+  vertical-align: middle;
+  margin-right: 1em;
+  border-radius: 50%;
+}
+
+.widget_authors ul > li {
+	margin-bottom: 2em;
+}
+
+.widget_authors ul ul li {
+	list-style: square;
+	margin-bottom: 0;
+	margin-left: 2em;
+}
+
+.call-to-action-widget .widget_authors ul li {
+	list-style-position: inside;
+}
+
+.call-to-action-widget .widget_author_grid ul {
+	display: inline-block;
+}
+
+.call-to-action-widget .widget-grofile ul.grofile-accounts li {
+	display: inline-block;
+}
+
+.call-to-action-widget .milestone-content {
+	margin: auto;
+}
+
+.call-to-action-widget .widgets-multi-column-grid ul {
+	display: inline-block;
+}
+
+.call-to-action-widget table {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.call-to-action-widget .wordpress-follow-button table {
+	margin: auto;
+}
+
+.call-to-action-widget .widgets-grid-layout {
+	display: inline-block;
+}
+
+.widget_flickr #flickr_badge_uber_wrapper a:link,
+.widget_flickr #flickr_badge_uber_wrapper a:active,
+.widget_flickr #flickr_badge_uber_wrapper a:visited {
+	color: #666;
+}
+
+.widget_flickr #flickr_badge_uber_wrapper a:hover {
+	color: #000;
+}
+
+.widget_flickr #flickr_badge_wrapper,
+.widget_flickr td,
+.widget_recent_comments td {
+	border: none;
+}
+
+.widget_recent_comments td {
+	line-height: 1.8em;
+}
+
+div[class^="gr_custom_container"] {
+	border: none !important; /* !important to overwrite inline styles */
+	padding: 0 !important; /* !important to overwrite inline styles */
+}
+
+div[class^="gr_custom_each_container"] {
+	border: none !important; /* !important to overwrite inline styles */
+}
+
+div[class^="gr_custom_title"] {
+	line-height: 1.7;
+}
+
+div[class^="gr_custom_author"] {
+	font-style: italic;
+	margin: 1em 0;
+}
+
+.widget_wpcom_social_media_icons_widget li a {
+	margin-right: 1em;
+}
+
+.widget_contact_info .contact-map,
+.jetpack-video-wrapper,
+.PDS_Poll {
+	margin-bottom: 1.6em;
+}
+
+.widgets-list-layout .widgets-list-layout-blavatar {
+	width: auto!important;
+	margin-right: 15px ;
+}
+
+.widgets-list-layout-links {
+	float: none!important;
+	width: auto!important;
+}
